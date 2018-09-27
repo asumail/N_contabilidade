@@ -46,7 +46,6 @@
     <body class="page-header-fixed">
         @include('layouts.header')
         <main class="page-content content-wrap">
-           
             @include('layouts.sidebar')
             <div class="page-inner">
                 <div class="page-title">
