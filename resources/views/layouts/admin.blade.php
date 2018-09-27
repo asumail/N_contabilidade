@@ -3,7 +3,7 @@
     <head>
         
         <!-- Title -->
-        <title>Modern | Admin Dashboard Template</title>
+        <title>N'Contabilidade</title>
         
         <meta content="width=device-width, initial-scale=1" name="viewport"/>
         <meta charset="UTF-8">
@@ -46,7 +46,7 @@
     <body class="page-header-fixed">
         @include('layouts.header')
         <main class="page-content content-wrap">
-            @include('layouts.navbar')
+           
             @include('layouts.sidebar')
             <div class="page-inner">
                 <div class="page-title">
