@@ -1,25 +1,3 @@
-<<<<<<< HEAD
-<div class="menu-wrap">
-    <nav class="profile-menu">
-        <div class="profile"><img src="assets/images/profile-menu-image.png" width="60" alt="David Green"/><span></span></div>
-        <div class="profile-menu-list">
-            <a href="#"><i class="fa fa-star"></i><span>Favorites</span></a>
-            <a href="#"><i class="fa fa-bell"></i><span>Alerts</span></a>
-            <a href="#"><i class="fa fa-envelope"></i><span>Messages</span></a>
-            <a href="#"><i class="fa fa-comment"></i><span>Comments</span></a>
-        </div>
-    </nav>
-    <button class="close-button" id="close-button">Close Menu</button>
-</div>
-<form class="search-form" action="#" method="GET">
-    <div class="input-group">
-        <input type="text" name="search" class="form-control search-input" placeholder="Search...">
-        <span class="input-group-btn">
-            <button class="btn btn-default close-search waves-effect waves-button waves-classic" type="button"><i class="fa fa-times"></i></button>
-        </span>
-    </div><!-- Input Group -->
-</form><!-- Search Form -->
-=======
 <div class="navbar">
     <div class="navbar-inner">
         <div class="sidebar-pusher">
@@ -220,7 +198,7 @@
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle waves-effect waves-button waves-classic" data-toggle="dropdown">
-                            <span class="user-name">Abdul Sumail<i class="fa fa-angle-down"></i></span>
+                            <span class="user-name">{{ Auth::user()->name }}<i class="fa fa-angle-down"></i></span>
                             <img class="img-circle avatar" src="assets/images/avatar1.png" width="40" height="40" alt="">
                         </a>
                         <ul class="dropdown-menu dropdown-list" role="menu">
@@ -235,11 +213,6 @@
                     <li>
                         <a href="login.html" class="log-out waves-effect waves-button waves-classic">
                             <span><i class="fa fa-sign-out m-r-xs"></i>Log out</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0);" class="waves-effect waves-button waves-classic" id="showRight">
-                            <i class="fa fa-comments"></i>
                         </a>
                     </li>
                 </ul><!-- Nav -->
