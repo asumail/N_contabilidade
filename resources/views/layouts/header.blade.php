@@ -198,7 +198,7 @@
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle waves-effect waves-button waves-classic" data-toggle="dropdown">
-                            <span class="user-name">Abdul Sumail<i class="fa fa-angle-down"></i></span>
+                            <span class="user-name">{{ Auth::user()->name }}<i class="fa fa-angle-down"></i></span>
                             <img class="img-circle avatar" src="assets/images/avatar1.png" width="40" height="40" alt="">
                         </a>
                         <ul class="dropdown-menu dropdown-list" role="menu">
@@ -215,13 +215,9 @@
                             <span><i class="fa fa-sign-out m-r-xs"></i>Log out</span>
                         </a>
                     </li>
-                    <li>
-                        <a href="javascript:void(0);" class="waves-effect waves-button waves-classic" id="showRight">
-                            <i class="fa fa-comments"></i>
-                        </a>
-                    </li>
                 </ul><!-- Nav -->
             </div><!-- Top Menu -->
         </div>
     </div>
 </div><!-- Navbar -->
+>>>>>>> 29bb7329ce7b730b2a5297421f2e788c9986ff5f

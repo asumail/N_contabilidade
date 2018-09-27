@@ -7,7 +7,7 @@
                         <img src="assets/images/profile-menu-image.png" class="img-circle img-responsive" alt="">
                     </div>
                     <div class="sidebar-profile-details">
-                        <span>David Green<br><small>Art Director</small></span>
+                        <span>{{ Auth::user()->name }}<br><small>Art Director</small></span>
                     </div>
                 </a>
             </div>
