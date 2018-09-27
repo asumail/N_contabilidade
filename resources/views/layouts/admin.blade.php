@@ -3,7 +3,7 @@
     <head>
         
         <!-- Title -->
-        <title>Modern | Admin Dashboard Template</title>
+        <title>N'Contabilidade</title>
         
         <meta content="width=device-width, initial-scale=1" name="viewport"/>
         <meta charset="UTF-8">
