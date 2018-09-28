@@ -50,3 +50,7 @@ Route::resource('/planocontas', 'PlanoContaController');
 Auth::routes();
 
 Route::resource('/superempresa', 'EmpresaController');
+
+Auth::routes();
+
+Route::resource('/perfil', 'PerfilController');
