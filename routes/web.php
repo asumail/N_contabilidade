@@ -29,7 +29,7 @@ Route::get('/admin', 'HomeController@admin')->name('admin');
 
 Auth::routes();
 
-Route::resource('/empresas', 'SubEmprsaController');
+Route::resource('/empresas', 'SubEmpresaController');
 
 Auth::routes();
 
