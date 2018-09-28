@@ -20,6 +20,7 @@ class CreateSubEmpresasTable extends Migration
             $table->string('localizacao');
             $table->string('celular');
             $table->string('fixo');
+            $table->string('empresa_id');
             $table->foreign('empresa_id')
                  ->references('id')->on('empresas')
                  ->onDelete('cascade');
