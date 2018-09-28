@@ -23,7 +23,7 @@ class SubEmpresaController extends Controller
      */
     public function create()
     {
-        return view('empresa.create');
+        return view('sub_empresa.create');
     }
 
     /**
