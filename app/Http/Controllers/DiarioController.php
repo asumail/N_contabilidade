@@ -13,7 +13,7 @@ class DiarioController extends Controller
      */
     public function index()
     {
-        return view('diario.index');
+        return view('diarios.index');
     }
 
     /**
@@ -23,7 +23,7 @@ class DiarioController extends Controller
      */
     public function create()
     {
-        return view('diario.create');
+        return view('diarios.create');
     }
 
     /**
