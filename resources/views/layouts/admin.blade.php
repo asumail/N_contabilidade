@@ -12,7 +12,7 @@
         <meta name="author" content="Steelcoders" />
         
         <!-- Styles -->
-        <link href="assets/css/css.css')}}" rel='stylesheet' type='text/css'>
+        <link href="{{ URL::asset('css/css.css')}}" rel='stylesheet' type='text/css'>
         <link href="{{ URL::asset('assets/plugins/pace-master/themes/blue/pace-theme-flash.css')}}" rel="stylesheet"/>
         <link href="{{ URL::asset('assets/plugins/uniform/css/uniform.default.min.css')}}" rel="stylesheet"/>
         <link href="{{ URL::asset('assets/plugins/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css"/>
