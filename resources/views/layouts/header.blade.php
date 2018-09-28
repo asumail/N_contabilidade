@@ -6,7 +6,7 @@
             </a>
         </div>
         <div class="logo-box">
-            <a href="index.html" class="logo-text"><span>Modern</span></a>
+            <a href="{{url('/admin')}}" class="logo-text"><span>N'Contabilidade</span></a>
         </div><!-- Logo Box -->
         <div class="search-button">
             <a href="javascript:void(0);" class="waves-effect waves-button waves-classic show-search"><i class="fa fa-search"></i></a>
@@ -203,13 +203,18 @@
                         </a>
                     </li>
                     <li>
-                        <a href="login.html" class="log-out waves-effect waves-button waves-classic">
-                            <span><i class="fa fa-sign-out m-r-xs"></i>Log out</span>
-                        </a>
+                        <a class="log-out waves-effect waves-button waves-classic" href="{{ route('logout') }}"
+                                            onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                            <span><i class="fa fa-sign-out m-r-xs"></i>Log out</span>
+                                        </a>
+
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                            {{ csrf_field() }}
+                                        </form>
                     </li>
                 </ul><!-- Nav -->
             </div><!-- Top Menu -->
         </div>
     </div>
 </div><!-- Navbar -->
->>>>>>> 29bb7329ce7b730b2a5297421f2e788c9986ff5f
