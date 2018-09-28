@@ -17,31 +17,31 @@
             <li><a href="{{url('/perfil')}}" class="waves-effect waves-button"><span class="menu-icon glyphicon glyphicon-user"></span><p>Perfil</p></a></li>
             <li class="droplink"><a href="#" class="waves-effect waves-button"><span class="menu-icon fa fa-sitemap"></span><p>Empresa</p><span class="arrow"></span></a>
                 <ul class="sub-menu">
-                    <li><a href="{{url('/empresas/add')}}">Adicionar</a></li>
+                    <li><a href="{{url('/empresas/create')}}">Adicionar</a></li>
                     <li><a href="{{url('/empresas')}}">Listar</a></li>
                 </ul>
             </li>
             <li class="droplink"><a href="#" class="waves-effect waves-button"><span class="menu-icon fa fa-book"></span><p>Diarios</p><span class="arrow"></span></a>
                 <ul class="sub-menu">
-                    <li><a href="{{url('/diarios/add')}}">Adicionar</a></li>
+                    <li><a href="{{url('/diarios/create')}}">Adicionar</a></li>
                     <li><a href="{{url('/diarios')}}">Listar</a></li>
                 </ul>
             </li>
             <li class="droplink"><a href="#" class="waves-effect waves-button"><span class="menu-icon fa fa-calendar"></span><p>Plano de Contas</p><span class="arrow"></span></a>
                 <ul class="sub-menu">
-                    <li><a href="{{url('/planocontas/add')}}">Adicionar</a></li>
+                    <li><a href="{{url('/planocontas/create')}}">Adicionar</a></li>
                     <li><a href="{{url('/planocontas')}}">Listar</a></li>
                 </ul>
             </li>
             <li class="droplink"><a href="#" class="waves-effect waves-button"><span class="menu-icon fa fa-file"></span><p>Docs. Pré-definidos</p><span class="arrow"></span></a>
                 <ul class="sub-menu">
-                    <li><a href="{{url('/docspredefinidos/add')}}">Adicionar</a></li>
+                    <li><a href="{{url('/docspredefinidos/create')}}">Adicionar</a></li>
                     <li><a href="{{url('/docspredefinidos')}}">Listar</a></li>
                 </ul>
             </li>
             <li class="droplink"><a href="#" class="waves-effect waves-button"><span class="menu-icon fa fa-dollar"></span><p>Lançamentos</p><span class="arrow"></span></a>
                 <ul class="sub-menu">
-                    <li><a href="{{url('/lancamentos/add')}}">Adicionar</a></li>
+                    <li><a href="{{url('/lancamentos/create')}}">Adicionar</a></li>
                     <li><a href="{{url('/lancamentos')}}">Listar</a></li>
                 </ul>
             </li>
