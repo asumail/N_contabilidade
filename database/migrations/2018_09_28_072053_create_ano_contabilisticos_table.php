@@ -15,6 +15,7 @@ class CreateAnoContabilisticosTable extends Migration
     {
         Schema::create('ano_contabilisticos', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('ano');
             $table->timestamps();
         });
     }

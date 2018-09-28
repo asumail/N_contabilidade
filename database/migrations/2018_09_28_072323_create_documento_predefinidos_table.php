@@ -15,7 +15,9 @@ class CreateDocumentoPredefinidosTable extends Migration
     {
         Schema::create('documento_predefinidos', function (Blueprint $table) {
             $table->increments('id');
-
+            $table->string('designacao');
+            $table->string('abreviatura');
+            $table->integer('num_interno');
             $table->unsignedInteger('sub_empresa_id');
             $table->foreign('sub_empresa_id')
                  ->references('id')->on('sub_empresas')
