@@ -6,7 +6,7 @@
             </a>
         </div>
         <div class="logo-box">
-            <a href="index.html" class="logo-text"><span>Modern</span></a>
+            <a href="{{url('/admin')}}" class="logo-text"><span>N'Contabilidade</span></a>
         </div><!-- Logo Box -->
         <div class="search-button">
             <a href="javascript:void(0);" class="waves-effect waves-button waves-classic show-search"><i class="fa fa-search"></i></a>
