@@ -86,8 +86,6 @@
         <script src="{{ URL::asset('assets/js/pages/dashboard.js')}}"></script>
 
         @yield('scripts')
-
-        @show
         
     </body>
 </html>
