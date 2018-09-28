@@ -12,7 +12,7 @@
                 </a>
             </div>
         </div>
-        <ul class="menu accordion-menu">
+            <ul class="menu accordion-menu">
             <li class="active"><a href="{{url('/admin')}}" class="waves-effect waves-button"><span class="menu-icon glyphicon glyphicon-home"></span><p>Dashboard</p></a></li>
             <li><a href="{{url('/perfil')}}" class="waves-effect waves-button"><span class="menu-icon glyphicon glyphicon-user"></span><p>Perfil</p></a></li>
             <li class="droplink"><a href="#" class="waves-effect waves-button"><span class="menu-icon fa fa-sitemap"></span><p>Empresa</p><span class="arrow"></span></a>
@@ -46,5 +46,7 @@
                 </ul>
             </li>
         </ul>
+       
+        
     </div><!-- Page Sidebar Inner -->
 </div><!-- Page Sidebar -->
