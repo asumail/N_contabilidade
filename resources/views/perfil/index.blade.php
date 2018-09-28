@@ -41,8 +41,7 @@
                             <ul class="list-unstyled text-center">
                                 <li><p><i class="fa fa-map-marker m-r-xs"></i>Melbourne, Australia</p></li>
                                 <li><p><i class="fa fa-envelope m-r-xs"></i><a href="#">example@mail.com</a></p></li>
-                                <li><p><i class="fa fa-link m-r-xs"></i><a href="#">www.themeforest.net</a></p></li>
-                            </ul>
+                             </ul>
                             <hr>
                             <button class="btn btn-primary btn-block"><i class="fa fa-plus m-r-xs"></i>Follow</button>
                         </div>
