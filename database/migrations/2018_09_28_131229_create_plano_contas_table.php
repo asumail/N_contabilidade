@@ -17,6 +17,11 @@ class CreatePlanoContasTable extends Migration
             $table->increments('id');
             $table->integer('numero_conta', 8, 2);
             $table->string('designacao');
+            $table->unsignedInteger('ano_empresas_id');
+            $table->foreign('ano_empresas_id')
+                 ->references('id')->on('ano_empresas')
+                 ->onDelete('cascade');
+
             $table->timestamps();
         });
     }
