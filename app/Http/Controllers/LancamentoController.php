@@ -13,7 +13,7 @@ class LancamentoController extends Controller
      */
     public function index()
     {
-        return view('lancamento.index');
+        return view('lancamentos.index');
     }
 
     /**
@@ -23,7 +23,7 @@ class LancamentoController extends Controller
      */
     public function create()
     {
-        return view('lancamento.create');
+        return view('lancamentos.create');
     }
 
     /**
