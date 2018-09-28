@@ -15,7 +15,16 @@ class CreateAnoEmpresaTable extends Migration
     {
         Schema::create('ano_empresa', function (Blueprint $table) {
             $table->increments('id');
+            $table->unsignedInteger('ano_id')->unsigned();
+            $table->unsignedInteger('sub_empresa_id')->unsigned();
+            $table->foreign('ano_id')
+                ->references('id')->on('ano_contabilisticos')
+                ->onDelete('cascade');
+            $table->foreign('sub_empresa_id')
+                ->references('id')->on('sub_empresas')
+                ->onDelete('cascade');
             $table->timestamps();
+                $table->timestamps();
         });
     }
 
