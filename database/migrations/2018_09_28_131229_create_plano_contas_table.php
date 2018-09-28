@@ -15,11 +15,11 @@ class CreatePlanoContasTable extends Migration
     {
         Schema::create('plano_contas', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('numero_conta', 8, 2);
+            $table->integer('numero_conta');
             $table->string('designacao');
             $table->unsignedInteger('ano_empresas_id');
             $table->foreign('ano_empresas_id')
-                 ->references('id')->on('ano_empresas')
+                 ->references('id')->on('ano_empresa')
                  ->onDelete('cascade');
 
             $table->timestamps();
