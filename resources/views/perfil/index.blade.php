@@ -50,7 +50,7 @@
                             <div class="panel panel-white">
                                 <div class="panel-body">
                                     <div class="post">
-                                        <textarea class="form-control" placeholder="Post" rows="4=6"></textarea>
+                                        <textarea class="form-control" placeholder="Funcionalidade ainda por implementar" rows="4=6"></textarea>
                                         <div class="post-options">
                                             <a href="#"><i class="icon-camera"></i></a>
                                             <a href="#"><i class="icon-camcorder"></i></a>
