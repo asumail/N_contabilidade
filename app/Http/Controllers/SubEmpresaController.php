@@ -13,7 +13,7 @@ class SubEmpresaController extends Controller
      */
     public function index()
     {
-        //
+        return view('sub_empresa.index');
     }
 
     /**

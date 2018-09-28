@@ -18,9 +18,11 @@ class CreateDocumentoPredefinidosTable extends Migration
             $table->string('designacao');
             $table->string('abreviatura');
             $table->integer('num_interno');
-            $table->unsignedInteger('sub_empresa_id');
-            $table->foreign('sub_empresa_id')
-                 ->references('id')->on('sub_empresas')
+            $table->double('valor_fixo', 8, 2);
+            $table->double('factor_mult', 8, 2);
+            $table->unsignedInteger('plano_contas_id');
+            $table->foreign('plano_contas_id')
+                 ->references('id')->on('plano_contas')
                  ->onDelete('cascade');
             $table->timestamps();
         });

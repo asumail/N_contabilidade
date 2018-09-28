@@ -13,7 +13,7 @@ class PlanoContaController extends Controller
      */
     public function index()
     {
-        //
+        return view('planocontas.index');
     }
 
     /**
@@ -23,7 +23,7 @@ class PlanoContaController extends Controller
      */
     public function create()
     {
-        //
+        return view('planocontas.create');
     }
 
     /**

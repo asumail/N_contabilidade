@@ -15,6 +15,14 @@ class CreateDiariosTable extends Migration
     {
         Schema::create('diarios', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('numero');
+            $table->string('tipo');
+            $table->string('tipo_select');
+            $table->string('moeda');
+            $table->unsignedInteger('ano_empresas_id');
+            $table->foreign('ano_empresas_id')
+                 ->references('id')->on('ano_empresas')
+                 ->onDelete('cascade');
             $table->timestamps();
         });
     }

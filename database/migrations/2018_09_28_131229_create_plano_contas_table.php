@@ -15,6 +15,8 @@ class CreatePlanoContasTable extends Migration
     {
         Schema::create('plano_contas', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('numero_conta', 8, 2);
+            $table->string('designacao');
             $table->timestamps();
         });
     }

@@ -15,10 +15,11 @@ class CreateSubEmpresasTable extends Migration
     {
         Schema::create('sub_empresas', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('nuit');
             $table->string('nome');
             $table->string('aliase');
             $table->string('localizacao');
-            $table->string('celular');
+            $table->string('telemovel');
             $table->string('fixo');
             $table->unsignedInteger('empresa_id');
             $table->foreign('empresa_id')

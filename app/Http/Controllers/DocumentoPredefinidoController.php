@@ -13,7 +13,7 @@ class DocumentoPredefinidoController extends Controller
      */
     public function index()
     {
-        //
+        return view('docspredefinidos.index');
     }
 
     /**
@@ -23,7 +23,7 @@ class DocumentoPredefinidoController extends Controller
      */
     public function create()
     {
-        //
+        return view('docspredefinidos.create');
     }
 
     /**
