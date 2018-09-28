@@ -15,6 +15,12 @@ class CreateLancamentosTable extends Migration
     {
         Schema::create('lancamentos', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('numero_fisico');
+            $table->unsignedInteger('ano_empresas_id');
+            $table->foreign('ano_empresas_id')
+                 ->references('id')->on('ano_empresa')
+                 ->onDelete('cascade');
+            $table->date('data');
             $table->timestamps();
         });
     }
