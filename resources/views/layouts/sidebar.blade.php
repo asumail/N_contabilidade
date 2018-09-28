@@ -14,7 +14,7 @@
         </div>
         <ul class="menu accordion-menu">
             <li class="active"><a href="{{url('/admin')}}" class="waves-effect waves-button"><span class="menu-icon glyphicon glyphicon-home"></span><p>Dashboard</p></a></li>
-            <li><a href="{{url('')}}" class="waves-effect waves-button"><span class="menu-icon glyphicon glyphicon-user"></span><p>Perfil</p></a></li>
+            <li><a href="{{url('/perfil')}}" class="waves-effect waves-button"><span class="menu-icon glyphicon glyphicon-user"></span><p>Perfil</p></a></li>
             <li class="droplink"><a href="#" class="waves-effect waves-button"><span class="menu-icon fa fa-sitemap"></span><p>Empresa</p><span class="arrow"></span></a>
                 <ul class="sub-menu">
                     <li><a href="{{url('/empresas/add')}}">Adicionar</a></li>
