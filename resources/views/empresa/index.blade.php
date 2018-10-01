@@ -44,7 +44,7 @@
                                         </tr>
                                         </thead>
                                         <tbody>
-                                        @foreach($sub_empresa  as $dado)
+                                        @foreach($empresa  as $dado)
                                             <tr>
                                                 <td>{{$dado->nome}}</td>
                                                 <td>{{$dado->aliase}}</td>

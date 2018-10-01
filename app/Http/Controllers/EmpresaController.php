@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Empresa;
 
 class EmpresaController extends Controller
 {
@@ -13,7 +14,8 @@ class EmpresaController extends Controller
      */
     public function index()
     {
-        return view('empresa.index');
+        $empresa = Empresa::all();
+        return view('empresa.index',Compact('empresa'));
     }
 
     /**
@@ -34,7 +36,12 @@ class EmpresaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        if($request->ajax()){
+            Empresa::create($request->all());
+            return response()->json([
+                "Mensagem" => "Salvo com Sucesso"
+            ]);
+        }
     }
 
     /**

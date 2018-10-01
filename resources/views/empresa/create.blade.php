@@ -13,7 +13,8 @@
                         <div class="panel panel-white">
                              <!--conteudo-->
                             <br>
-                            <form id="demo-form2" data-parsley-validate="" method="post" action="{{url('Sub_Empresa/Save')}}" class="form-horizontal form-label-left" novalidate="">
+                            <form id="form-registrar-ajax" data-parsley-validate="" method="POST"   class="form-horizontal form-label-left" novalidate="">
+                            
                                     <input type="hidden" value="{{csrf_token()}}" name="_token" id="token">
 
                                 <div class="form-group">
@@ -65,7 +66,7 @@
                                 <div class="ln_solid"></div>
                                 <div class="form-group">
                                     <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
-                                        <a href="{{url('Sub_Empresa')}}" class="btn btn-primary" type="button">Voltar</a>
+                                        <a href="{{url('/superempresa')}}" class="btn btn-primary" type="button">Voltar</a>
                                         <button class="btn btn-primary" type="reset">Limpar</button>
                                         <button type="submit" class="btn btn-success">Submeter</button>
                                     </div>
@@ -82,6 +83,31 @@
 
 <!--Javascript Local-->
 @section('scripts')
+<script>
+ $("#form-registrar-ajax").submit(function (event) {
+            event.preventDefault();
+            var  nome=$('#nome_empresa').val();
+            alert(nome);
+
+            var $form = $(this);
+
+            $.ajax({
+                type: "POST",
+                url: "/superempresa",
+                data: $form.serialize(),
+                success: function (data) {
+                    // window.location.href='login.php';
+                    alert('Entrei');
+                },
+                error: function (error) {
+                    alert("erro: ver consola");
+                    console.log(error);
+                }
+            })
+
+        });
+
+</script>
 
 @endsection
 <!-- fim Javascript Local-->
