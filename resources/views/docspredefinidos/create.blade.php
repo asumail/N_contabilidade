@@ -151,14 +151,14 @@ label>.total{
                                                     <dt class="custom-item"></dt>
                                                 </dl>
                                                 <div class="row">
-                                                    <label class=" col-md-12" for="first-name">
+                                                    <label class="col-md-offset-10 col-md-12" for="first-name">
                                                         <button id="mov" type="button"
                                                                 class="btn btn-success btn btn-default btn-sm margintop"
                                                                 title=""
                                                                 data-bind="click: AddMov" data-tooltip="true"
                                                                 data-original-title="Introduz uma nova linha abaixo da linha selecionada. [CTRL+INS]">
                                                             <span class="glyphicon glyphicon-plus"></span>
-                                                            Novo movimento
+                                                            Nova linha
                                                         </button>
                                                         {{--<label class="col-md-offset-6 total deb" for="">Total Débito</label>--}}
                                                         {{--<label class="col-md-offset-1 mrg total" for="">Total Crédito</label>--}}
@@ -174,7 +174,7 @@ label>.total{
                                 <div class="ln_solid"></div>
                                 <div class="form-group">
                                     <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-5">
-                                        <a href="{{url('DocsPredefinidos')}}" class="btn btn-primary"
+                                        <a href="{{url('docspredefinidos')}}" class="btn btn-primary"
                                            type="button">Voltar</a>
                                         <button class="btn btn-primary" type="reset">Limpar</button>
                                         <button type="submit" class="btn btn-success">Submeter</button>

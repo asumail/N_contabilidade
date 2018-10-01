@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\DocumentoPredefinido;
 class DocumentoPredefinidoController extends Controller
 {
     /**
@@ -13,7 +13,8 @@ class DocumentoPredefinidoController extends Controller
      */
     public function index()
     {
-        return view('docspredefinidos.index');
+        $doc = DocumentoPredefinido::all();
+        return view('docspredefinidos.index',Compact('doc'));
     }
 
     /**
