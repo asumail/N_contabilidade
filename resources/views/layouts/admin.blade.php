@@ -44,7 +44,7 @@
         @yield('cssLocal')
         
     </head>
-    <body class="page-header-fixed">
+    <body class="page-header-fixed page-sidebar-fixed  pace-done small-sidebar">
         @include('layouts.header')
         <main class="page-content content-wrap">
             @include('layouts.sidebar')
