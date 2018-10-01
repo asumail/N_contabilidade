@@ -33,13 +33,14 @@
                                         </tr>
                                         </thead>
                                         <tbody>
-                                        @foreach($docs_predefinidos  as $dado)
+                                        @foreach($doc  as $dado)
                                             <tr>
-                                                <td>{{$dado->descricao}}</td>
+                                                <td>{{$dado->designacao}}</td>
                                                 <td>{{$dado->abreviatura}}</td>
-                                                <td>{{$dado->conta}}</td>
+                                                <td>{{$dado->num_interno}}</td>
                                                 <td>{{$dado->valor_fixo}}</td>
-                                                <td>{{$dado->factor_multiplicativo}}</td>
+                                                <td>{{$dado->factor_mult}}</td>
+                                                <td>{{$dado->plano_contas_id}}</td>
                                                 <td align="Center">
                                                     <a class="btn btn-primary" href="{{url('Lancamentos/'.$dado->idLancamentos)}}"><i class="fa fa-edit"></i>&nbsp;Actualizar</a>
                                                     <form method="POST" action="{{url('Lancamentos/delete/'.$dado->idLancamentos)}}" accept-charset="UTF-8" style="display:inline">
