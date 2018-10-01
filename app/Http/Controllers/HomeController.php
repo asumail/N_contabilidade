@@ -22,7 +22,7 @@ class HomeController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
+    { 
         return view('home');
     }
 
@@ -31,9 +31,13 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function admin()
+    public function admin(Request $request)
     {
-        return view('dashboard.index');
+        if($request->user()->authorizeRoles(['admin'])) {
+            return view('dashboard.index');
+        } else {
+            return redirect('home');
+        }
     }
 
 

@@ -23,7 +23,7 @@
                                     <div class="form-group">
                                         <input type="password" name="password" class="form-control" placeholder="Password" required>
                                     </div>
-                                    @if ($errors->has('password'))
+                                    @if ($errors->has('password')) 
                                     <span class="help-block">
                                         <strong>{{ $errors->first('password') }}</strong>
                                     </span>
