@@ -13,6 +13,10 @@ class User extends Authenticatable
         return $this->belongsToMany('App\Role');
     }
 
+    public function subempresas() {
+        return $this->belongsToMany('App\SubEmpresa');
+    }
+
     public function authorizeRoles($roles) {
         if($this->hasAnyRole($roles)) {
             return true;
