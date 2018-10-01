@@ -24,7 +24,6 @@ class CreateAnoEmpresaTable extends Migration
                 ->references('id')->on('sub_empresas')
                 ->onDelete('cascade');
             $table->timestamps();
-                $table->timestamps();
         });
     }
 
